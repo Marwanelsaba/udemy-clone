@@ -50,6 +50,10 @@ const FeaturedCourses = () => {
             )
         })}
       </div>
+      
+      <div className="view-all-link-container">
+        <a href="#" className="view-all-link">Show all Artificial Intelligence (AI) courses →</a>
+      </div>
     </section>
   );
 };
