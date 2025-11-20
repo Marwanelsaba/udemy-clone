@@ -1,0 +1,371 @@
+:root {
+  --promo-cyan: #a5d8dd;
+  --primary-purple: #6c2bd9;
+  --deep-purple: #4a0a8c;
+  --light-grey: #f3f3f3;
+  --font-dark: #333;
+  --font-light: #555;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: var(--font-dark);
+}
+
+/*PROMO HEADER*/
+.promo-header {
+  background: var(--promo-cyan);
+  padding: 12px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 0.95rem;
+}
+.promo-text {
+  color: #000;
+}
+.promo-close {
+  position: absolute;
+  right: 32px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #000;
+  padding: 4px 8px;
+}
+
+.promo-close:hover {
+  opacity: 0.7;
+}
+
+/*UTILITY BUTTONS */
+.globe-button {
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.globe-button:hover {
+  background: #f5f5f5;
+}
+
+/*BRANDS SECTION */
+.brands-section {
+  padding: 48px 0;
+  text-align: center;
+  background: var(--light-grey);
+}
+
+.brands-section h2 {
+  font-size: 2rem;
+  color: var(--deep-purple);
+  margin-bottom: 32px;
+}
+
+.brand-logos,
+.large-banner,
+.brand-logos img,
+.large-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.large-banner img {
+  border-radius: 10px;
+}
+
+.large-banner {
+  margin-top: 32px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar .brand-search {
+  flex-grow: 1;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.navbar .nav-text-link{
+  font-family: Arial, sans-serif;
+  font-weight: 400; 
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.navbar .nav-text-Plans\&Pricing{
+  font-family: Arial, sans-serif;
+  font-weight: 400; 
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.navbar .nav-text-UB{
+  font-family: Arial, sans-serif;
+  font-weight: 400; 
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.navbar .nav-text-TeachUdemy {
+  font-family: Arial, sans-serif;
+  font-weight: 400; 
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.navbar .brand {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: var(--deep-purple);
+}
+
+.input-search {
+  width: 100%;
+  max-width: 650px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.nav-actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-actions .cart-icon {
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--font-light);
+}
+
+.login_button,
+.signup_button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 90px;
+  text-align: center;
+  border: 1px solid var(--primary-purple);
+}
+
+.login_button {
+  background: white;
+  color: var(--primary-purple);
+}
+
+.signup_button {
+  background: var(--primary-purple);
+  color: white;
+  border: 1px solid var(--primary-purple);
+}
+
+.banner-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 32px;
+  background: var(--light-grey);
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  max-width: 500px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: var(--deep-purple);
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  color: var(--font-light);
+}
+
+.intro-images img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.skills-section {
+  padding: 48px 32px;
+  background: white;
+}
+
+.skills-section h2,
+.skills-section p {
+  text-align: left;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: var(--deep-purple);
+}
+
+.skills-section p {
+  font-size: 1.2rem;
+  color: var(--font-dark);
+  margin-bottom: 32px;
+}
+
+.courses-title {
+  text-align: left;
+}
+
+.header-image {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-behavior: smooth;
+}
+
+.skill-card {
+  flex: 0 0 250px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: var(--font-dark);
+}
+
+.skill-card .mentor {
+  font-size: 0.85rem;
+  color: var(--font-light);
+  margin-bottom: 4px;
+}
+/* COURSE CARD METADATA (Badge, Rating, Price) */
+.skill-card .highlight {
+  display: inline-block;
+  background-color: #d1e3e0;
+  color: #0b504f;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+.highlight.is-premium {
+  background-color: var(--primary-purple);
+  color: white; 
+}
+/* Rating and Price Grouping */
+.course-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+/* Grouping for Score and Count*/
+.course-stats .stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.course-stats .rating-score {
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+.course-stats .rating-count {
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.course-prices {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.current-price {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+.original-price {
+  font-size: 1em;
+  color: #1b1703;
+  text-decoration: line-through;
+  margin: 0;
+}
