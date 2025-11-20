@@ -135,10 +135,10 @@ body {
   line-height: 1.6;
   white-space: nowrap;
 }
-.navbar .brand {
-  font-weight: bold;
-  font-size: 1.7rem;
-  color: var(--deep-purple);
+.navbar .logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .input-search {
@@ -228,7 +228,18 @@ body {
   object-fit: cover;
   border-radius: 10px;
 }
+.view-all-link-container {
+  padding: 32px 0;
+  text-align: left;
+}
 
+.view-all-link {
+  color: var(--primary-purple);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
 .skills-section {
   padding: 48px 32px;
   background: white;
