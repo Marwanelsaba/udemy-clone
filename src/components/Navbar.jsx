@@ -12,7 +12,10 @@ function TopBar() {
 
     <header className="navbar">
       <div className="brand-search">
-        <div className="brand">Udemy</div>
+      <img src="public/pictures/udemy.png" 
+      alt="text 9" 
+      className="logo-image"
+    />
         <div className="nav-text-link">Explore</div>
         <input
           type="text"
